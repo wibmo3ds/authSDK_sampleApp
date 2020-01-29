@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tool_bar_bottom_padding"
+        android:background="@color/brand_color_dark"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Notifications"
+        app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"></android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HundreadTwentyEight"
+            android:layout_above="@+id/emoptyText1"
+            android:src="@drawable/notification_bell"
+            android:tint="@color/gray_text" />
+
+
+        <TextView
+            android:id="@+id/emoptyText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginRight="@dimen/Sixteen"
+            android:layout_marginTop="@dimen/Sixteen"
+            android:gravity="center"
+            android:text="No Notifications yet"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/TwentyEight"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emoptyText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emoptyText1"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginRight="@dimen/Sixteen"
+            android:layout_marginTop="@dimen/Eight"
+            android:gravity="center"
+            android:text="@string/stay_tuned_notifications_will_come_up_here"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/Twenty" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

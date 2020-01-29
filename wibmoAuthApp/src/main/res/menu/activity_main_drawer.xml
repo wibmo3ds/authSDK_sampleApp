@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_Deregister"
+            android:icon="@drawable/deregister"
+            android:title="@string/deregister" />
+    </group>
+
+    <item android:title="@string/help_center">
+        <menu>
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_menu_email"
+                android:title="@string/email_us" />
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_menu_call"
+                android:title="@string/call_us_9am_to_9pm" />
+        </menu>
+    </item>
+
+</menu>

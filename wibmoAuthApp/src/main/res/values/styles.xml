@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sansFontName">sans-serif-light</string>
+
+    <integer name="headerTextSize">20</integer>
+    <integer name="infoTextSize">15</integer>
+
+    <style name="wibmoHeaderStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:width">10dp</item>
+    </style>
+
+
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+        <!-- <item name="android:textColor">@drawable/tab_text_selector</item>
+         <item name="android:textAppearance">@drawable/tab_text_selector</item>-->
+    </style>
+
+
+    <style name="AppTheme.BaseM" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_color</item>
+        <item name="colorPrimaryDark">@color/brand_color_dark</item>
+        <item name="colorAccent">@color/brand_orange_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="colorControlActivated">@color/brand_color</item>
+        <item name="colorControlHighlight">@color/brand_color</item>
+        <item name="android:colorBackground">@color/defaultwhite</item>
+        <item name="android:colorForeground">@color/amount_gray</item>
+        <item name="android:windowBackground">@color/defaultwhite</item>
+        <item name="android:textColorPrimary">@color/secondary_text_default_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/secondary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/background_floating_material_dark</item>
+        <item name="android:popupMenuStyle">@style/popup_menu</item>
+        <item name="textColorAlertDialogListItem">@color/secondary_text_material_light</item>
+        <item name="android:statusBarColor">@color/brand_color</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!-- <item name="homeAsUpIndicator">@style/Theme.MyFancyTheme</item>-->
+        <!-- <item name="android:textColorPrimary">@color/defaultwhite</item>-->
+        <!-- <item name="android:windowBackground">@color/background_material_light</item>
+         <item name="android:colorBackground">@color/background_material_light</item>-->
+        <!-- <item name="android:windowAnimationStyle">@null</item>-->
+        <!--<item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="colorControlActivated">@color/brand_blue</item>
+        <item name="colorControlHighlight">@color/brand_blue</item>
+        <item name="android:textColorSecondary">@color/secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/secondary_text_material_light</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_material_dark</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:colorBackground">@color/background_material_light</item>-->
+        <!--<item name="android:textColorPrimary">@color/primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_material_light</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:windowBackground">@color/background_material_light</item>-->
+        <!--<item name="android:textColorPrimary">@color/primary_text_material_light</item>-->
+    </style>
+
+    <style name="popup_menu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupMenuStyle">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/defaultwhite</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+
+    <!-- <style name="AppTheme.BaseM2" parent="Theme.AppCompat.NoActionBar">
+         <item name="colorPrimary">@color/brand_blue</item>
+         <item name="colorPrimaryDark">@color/brand_blue_dark</item>
+         <item name="android:windowNoTitle">true</item>
+         <item name="windowActionBar">false</item>
+         <item name="colorAccent">@color/brand_orange</item>
+         <item name="android:windowAnimationStyle">@null</item>
+         <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+         <item name="colorControlActivated">@color/brand_blue</item>
+         <item name="colorControlHighlight">@color/brand_blue</item>
+         <item name="android:colorBackground">@android:color/background_material_light</item>
+         <item name="android:textColorPrimary">@color/primary_text_material_dark</item>
+         <item name="android:textColorPrimaryInverse">@color/primary_text_material_dark</item>
+     </style>-->
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+</resources>

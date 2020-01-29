@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="logo_color_blue">#214b88</color>
+    <color name="logo_color_orange">#ff9933</color>
+    <color name="logo_color_green">#99cc33</color>
+    <color name="color_for_toast">@color/logo_color_blue</color>
+    <color name="color_for_toast_error">@color/logo_color_orange</color>
+    <color name="to_confirm_paper_color">#f4f4f4</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="grey_color">#c9c9c9</color>
+    <color name="def_black_color">#6c6c6c</color>
+    <color name="blue_color">#214b88</color>
+
+    <string name="whiteColor">#FFFFFF</string>
+    <string name="greyColor">#c9c9c9</string>
+    <string name="blackColor">#000000</string>
+    <string name="blueColor">#214b88</string>
+
+    <color name="welcome_page_indicator_fill_color">@color/logo_color_blue</color>
+    <color name="welcome_page_indicator_page_color">@color/white_color</color>
+    <color name="welcome_page_indicator_stroke_color">@color/logo_color_blue</color>
+
+    <integer-array name="spb_colors">
+        <item>@color/logo_color_blue</item>
+        <item>@color/logo_color_orange</item>
+        <item>@color/logo_color_green</item>
+    </integer-array>
+
+
+    <color name="colorPrimary">@color/brand_color</color>
+    <color name="colorPrimaryDark">@color/brand_color_dark</color>
+    <color name="colorAccent">@color/brand_color</color>
+    <color name="teal">#008080</color>
+    <color name="white">#ffffff</color>
+    <color name="color2">#f5a623</color>
+    <color name="color3">#ffffff</color>
+    <color name="color4">#f5a623</color>
+    <color name="color5">#ffffff</color>
+    <color name="teal_translusent">#29002626</color>
+    <color name="translucent_white">#fafbfbfb</color>
+    <color name="gray">#808080</color>
+
+    <color name="black">#000000</color>
+
+    <color name="brand_blue_translucent">#8fbdf0</color><!--#E35585b5-->
+    <!--<color name="brand_blue_light">#8fbdf0</color>-->
+
+    <!--#8eb8e5--><!--6c9cbc-->
+    <!--#5585b5-->
+    <color name="brand_color">#16b6f0</color>
+    <!--336699--><!--38699e- -> <!-5D9FE9-->
+    <!--#33506b-->
+    <color name="brand_color_dark">#019ed7</color> <!--#2d6d97-->
+    <!--#2d6d97-->
+
+
+    <color name="brand_orange">#f5a623</color> <!-- #EE8737-->
+    <!-- #EE8737-->
+    s
+    <color name="brand_orange_material500">#f5a623</color>  <!--  #FB8C00-->
+    <!--#F28729-->
+    <color name="brand_orange_dark">#f5a623</color><!--#c26c21-->
+    <color name="red">#fec73e26</color><!--#c26c21-->
+
+    <color name="translucent">#80000000</color>
+    <color name="amount_gray">#636363</color>
+
+    <color name="defaultwhite">#f2f2f0</color>
+    <color name="defaultwhite_translucent">#98ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_color">#f1f3f1</color>
+
+    <integer-array name="mypool_colors">
+        <item>@color/brand_color</item>
+        <item>@color/brand_orange_material500</item>
+        <item>@color/brand_blue_translucent</item>
+        <item>@color/brand_color</item>
+        <item>@color/brand_orange_dark</item>
+    </integer-array>
+
+    <!--Material colors for theme Selection-->
+    <color name="gift_theme">#ef5350</color>
+    <color name="gift_theme_second">#f44336</color>
+    <color name="teal400">#26a69a</color>
+
+    <color name="newGreen">#FF50BA55</color>
+
+    <color name="green">#6cc55b</color>
+
+
+    <color name="gray_text">#959595</color>
+
+    <color name="primary_text_default_material_dark">#212121</color>
+    <color name="primary_text_material_dark">#bdbdbd</color>
+    <color name="secondary_text_default_material_dark">#212121</color>
+    <color name="secondary_text_material_light">#731b1b1b</color>
+    <color name="secondary_text_material_dark">#616161</color>
+    <color name="divider">#b6b6b6</color>
+    <color name="primary_text_default_material_light">#fafafa</color>
+    <!-- <color name="cb_input_gray">#959595</color>-->
+    <color name="bright_foreground_material_light">#eeeeee</color>
+    <color name="background_material_dark">#303030</color>
+    <color name="background_material_light">#ffffffff</color>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultwhite">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_main"></include>
+
+    <!--<fr.castorflex.android.smoothprogressbar.SmoothProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        app:spb_colors="@array/mypool_colors"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="2"
+        app:spb_progressiveStop_speed="2"
+        app:spb_reversed="false"
+        app:spb_sections_count="4"
+        app:spb_speed="2.0"
+        app:spb_stroke_separator_length="@dimen/Two"
+        app:spb_stroke_width="@dimen/four" />-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HundreadTwentyEight"
+            android:layout_above="@+id/emoptyText1"
+            android:layout_centerInParent="true"
+            android:tint="@color/gray_text"
+            android:src="@drawable/txn_history"/>
+
+
+        <TextView
+            android:id="@+id/emoptyText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/TwentySix"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/Sixteen"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginRight="@dimen/Sixteen"
+            android:textColor="@color/gray_text"
+            android:text="No Transaction History Found"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

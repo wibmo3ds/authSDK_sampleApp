@@ -1,0 +1,111 @@
+<resources>
+
+
+    <string name="app_name">wibmo-auth-sdk</string>
+
+    <string name="default_notification_channel_id" translatable="false">23</string>
+    <string name="default_notification_channel_name" translatable="false">WibmoAuthDefault</string>
+    <string name="label_phone_number_verificaiton_help1">An SMS will be sent out (from your default SIM) to complete the verification. This may cost you based on your billing plan and mobile service provider.</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_sms_failed_try_again">SMS failed, please try again.</string>
+    <string name="label_sms_sent">SMS delivered</string>
+    <string name="label_sms_not_sent">SMS not delivered</string>
+    <string name="sms_send_permission_missing_msg">You need to allow access to send SMS to verify your phone number</string>
+    <string name="label_ok">OK</string>
+    <string name="sms_send_permission_rationale">We need access to send outgoing SMS to verify your phone number.</string>
+    <string name="phone_state_permission_rationale">We need access to basic info about your phone to secure your transaction.</string>
+    <string name="phone_state_permission_missing_msg">You need to allow access to capture basic info about your phone to secure your transaction.</string>
+    <string name="label_approve">Approve</string>
+    <string name="intro_1_head"><![CDATA[Fast & Easy way to make Payment]]></string>
+    <string name="reg_success">Registration Success</string>
+    <string name="reg_failed">Registration Failed</string>
+    <string name="link_to_deregister">Click here to De-Register</string>
+    <string name="link_to_register">Click here to Register again</string>
+    <string name="label_na">N/A</string>
+    <string name="registering_sim">Registering Your SIM.</string>
+    <string name="label_txn_id">Your transaction id: </string>
+    <string name="label_reg_status_check">Checking your registration status</string>
+    <string name="label_txn_success">Transaction authenticated successfully.</string>
+    <string name="label_txn_failed">Transaction declined successfully.</string>
+    <string name="label_is_charging_you">is charging you</string>
+    <string name="label_pls_wait">Please wait...</string>
+    <!-- <string name="label_sel_sim">Select your SIM</string>-->
+    <string name="label_sel_sim">Select your mobile number for registration</string>
+    <string name="label_mob_num">Mobile number</string>
+    <string name="label_sim1">SIM1</string>
+    <string name="label_sim2">SIM2</string>
+    <string name="label_de_reg_success">Successfully de-registered</string>
+    <string name="label_de_reg_profile">De-register Profile</string>
+    <string name="label_de_reg_product">Register/De-register Product</string>
+    <string name="label_user_already_reg">You have been registered</string>
+    <string name="title_prod_reg">Product Registration</string>
+    <string name="title_registration">Registration</string>
+    <string name="title_txn">Transaction Authentication</string>
+
+    <string name="error_bank_not_reg">Sorry, Bank is not enabled for Push Notification based Authentication.</string>
+    <string name="error_bankid_na">BankId not passed</string>
+    <string name="error_no_sim_detected">Sorry, No sim card detected.</string>
+    <string name="label_next">Next</string>
+    <string name="label_not_my_txn">Not my transaction</string>
+    <string name="label_reg_prod">Registering For E-Commerce Transactions</string>
+    <string name="label_no_prod_reg">Sorry, no product has been registered</string>
+    <string name="link_to_reg_prod">Click here to register for products</string>
+    <string name="label_update_txn">Updating Txn Status</string>
+
+    <string name="action_clear_notification">clear All notifications</string>
+    <string name="home">Home</string>
+    <string name="call_us_9am_to_9pm">Call Us (10am-5pm)</string>
+    <string name="email_us">Email Us</string>
+    <string name="help_center">Help Center</string>
+    <string name="my_account">My Account</string>
+    <string name="deregister">De-Register</string>
+    <string name="really_quit">Do you really want to logout from the app ?</string>
+    <string name="really_degister">Do you really want to deregister your account from this app ??</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="rupee">\u20B9</string>
+    <string name="title_activity_fraud_alert">FraudAlertActivity</string>
+    <string name="clear_all_notification">Clear All Notifications</string>
+    <string name="clear_all_notification_message">Do you really want to clear all your notifications ?</string>
+
+
+    <string name="push_notification">Push\nNotification</string>
+    <string name="purchase">Purchase</string>
+    <string name="item_title">White Mesh Pluto Backpack</string>
+    <string name="item_price">$62.68</string>
+    <string name="item_description">Mesh backpack in white. Black textile trim throughout.</string>
+    <string name="purchase_done">Device credential confirmed.</string>
+    <plurals name="already_confirmed_device_credentials_within_last_x_seconds">
+        <item quantity="one">The device credential has been already confirmed within the last
+            %1$d second.</item>
+        <item quantity="other">The device credential has been already confirmed within the last
+            %1$d seconds.</item>
+    </plurals>
+    <string name="description_bugdroid_icon">Android bugdroid image</string>
+
+    <string name="by_signing_in_you_agree_to_our">By proceeding you agree to our</string>
+    <string name="terms_and_conditions">Terms and</string>
+    <string name="terms_and_conditions2"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy2"><u>Privacy policy</u></string>
+    <!--<string name="security_at_your_fingertip">Security at your fingertip.\nSet Touch ID Login for instant access!</string>-->
+    <string name="security_at_your_fingertip">Device PIN/Pattern/Fingerprint is not enabled, Please enable to Proceed</string>
+    <string name="securing_transactions_protecting_customers">Securing Transactions, Protecting Customers</string>
+    <string name="enable_security">Enable security for instant access</string>
+    <string name="auto_time_setting_message">We have detected that the Automatic Time and Timezone settings are not enabled on your phone. For Security reasons and proper functioning of the app please enable Auto Date and Time Settings.</string>
+    <string name="open_settings">OPEN SETTINGS</string>
+    <string name="app_version">App Version</string>
+    <string name="stay_tuned_notifications_will_come_up_here">Stay Tuned! Notifications will come up here</string>
+    <!--    <string name="bank_name">IDBI_Bank</string>
+        <string name="api_key">idbi_authapp_123</string>-->
+    <string name="action_settings">Settings</string>
+    <string name="label_register">Register</string>
+    <string name="secure_friction_free_payment">Secure &amp; Friction-Free Payment</string>
+    <string name="authenticate_transactions_with_a_single_tap">Authenticate Transactions \n with A Single Tap</string>
+    <string name="two_step_easy_registration">2-Step Easy Registration</string>
+    <string name="choose_your_registered_mobile_number">\u2022 Choose your registered mobile number</string>
+    <string name="verify_device_set_pin">\u2022 Verify device &amp; set PIN</string>
+    <string name="easy_payment_authentication">Easy Payment Authentication</string>
+    <string name="accept_decline_via_push_notification">\u2022 Accept / Decline via. Push Notification</string>
+    <string name="generate_otp_on_your_device">\u2022 Generate OTP on your device</string>
+</resources>

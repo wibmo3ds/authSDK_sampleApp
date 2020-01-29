@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/lockScreenMainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/fingerPrintDetectedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/HundreadFourtyEight"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/HundreadEighty"
+        android:src="@drawable/ic_baseline_security"
+        android:tint="@color/brand_blue_translucent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Touch ID detected!"
+            android:gravity="center"
+            android:textSize="@dimen/TwentyFour"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/securityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/Twenty"
+            android:textColor="@color/gray_text"
+            android:layout_marginBottom="8dp"
+            android:text="@string/security_at_your_fingertip"/>
+
+
+
+        <Button
+            android:id="@+id/enableTouchIdButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_button_corners_blue"
+            android:text="Enable Touch ID"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/patternLockButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_button_corners"
+            android:text="Use Other Authentication"
+            android:textColor="@color/brand_color"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

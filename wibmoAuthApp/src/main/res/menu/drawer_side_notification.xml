@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main.OfferAlertsNotifications">
+    <item
+        android:id="@+id/action_clear_notification"
+        android:icon="@drawable/clear_all_notification"
+        android:title="@string/action_clear_notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/wibmoIcon"
+        android:icon="@drawable/wibmo_icon"
+        android:title="Filters"
+        app:showAsAction="always" />
+</menu>

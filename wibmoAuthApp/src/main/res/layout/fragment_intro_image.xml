@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <ImageView
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom"
+        android:src="@drawable/onboarding_img_1"
+        android:visibility="visible"
+        android:layout_weight="0.8"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_weight="1.2">
+
+        <TextView
+            android:id="@+id/footerTopText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/TwentySix"
+            android:text="@string/two_step_easy_registration"
+            />
+
+        <TextView
+            android:id="@+id/bulletText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginTop="@dimen/four"
+            android:textSize="@dimen/TwentyFour"
+            android:text="@string/choose_your_registered_mobile_number"/>
+
+        <TextView
+            android:id="@+id/bulletText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginTop="@dimen/four"
+            android:textSize="@dimen/TwentyFour"
+            android:text="@string/verify_device_set_pin"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

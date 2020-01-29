@@ -1,0 +1,34 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="https://stagingauthapp.pc.enstage-sas.com"
+        android:inputType="text|textUri"
+        android:key="domainToPost"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Domain To Post Auth Request" />
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="Federal_Bank"
+        android:inputType="text"
+        android:key="clientId"
+        
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Client Id" />
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="federal_authapp_acs"
+        android:inputType="text"
+        android:key="apiKey"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Api Key" />
+
+</PreferenceScreen>

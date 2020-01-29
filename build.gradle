@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven {
+            url 'https://wibmocom.bintray.com/Wibmo_AuthApp'
+        }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "http://jcenter.bintray.com"}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven{
+            url "https://raw.githubusercontent.com/wibmo3ds/AuthSdk/master/"
+            content {
+                includeGroupByRegex "com\\.wibmo.*"
+            }
+            credentials(HttpHeaderCredentials) {
+                name = "Authorization"
+                value = "Bearer 8f6723fff497b55a58cbb174a005e6cfc9a12eef"
+            }
+            authentication {
+                register("header", HttpHeaderAuthentication)
+            }
+        }
+        maven { url 'https://maven.google.com' }
+        google()
+        jcenter()
+        maven { url "http://dl.bintray.com/populov/maven" }
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven {
+            url 'https://wibmocom.bintray.com/Wibmo_AuthApp'
+        }
+
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+        maven { url "http://jcenter.bintray.com"}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+subprojects {
+    tasks.withType(Javadoc).all { enabled = false }
+}

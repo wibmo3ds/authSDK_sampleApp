@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="welcome_intro_slide_count">2</integer>
+    <integer name="animation_start_time">300</integer>
+    <integer name="animation_delay_time">5000</integer>
+</resources>

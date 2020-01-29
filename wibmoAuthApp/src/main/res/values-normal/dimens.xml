@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="events_meta_textsize">12sp</dimen>
+    <dimen name="redeem_padding">0dp</dimen>
+</resources>

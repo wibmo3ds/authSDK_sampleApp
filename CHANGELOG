@@ -1,0 +1,26 @@
+Version file for Android App
+//A.B.C.D
+//--
+//A = Major
+//B = Backend change/New feature, bug fix
+//C = New feature, bug fix
+//D = Bug Fix only or re-release to qa/bank
+//--
+
+Version 1.01.00.02 (Dt: 23 Nov 2017) - Nithya
+------------------
+# Removed test api call to verify SIM.
+
+Version 1.01.00.01 (Dt: 09 Nov 2017) - Nithya
+------------------
+# Support for changing the domain to post.
+
+Version 1.01.00.00 (Dt: 08 Nov 2017) - Nithya
+------------------
+# Optimised all the rest API calls.
+
+Version 1.00.00.00 (Dt: 22 Sep 2017) - Nithya
+------------------
+# Intial commit for Wibmo Auth App
+
+

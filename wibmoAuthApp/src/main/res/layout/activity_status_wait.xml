@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color">
+
+       <!-- <include layout="@layout/header_circle_img" />-->
+
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true"
+            app:cpb_color="#FFee44"
+            app:cpb_colors="@array/mypool_colors"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_sweep_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_min_sweep_angle="10"
+            app:cpb_max_sweep_angle="300"
+            android:layout_above="@id/statusFor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/Sixteen"
+            />
+
+        <TextView android:id="@+id/statusFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/Sixteen"
+            android:paddingRight="@dimen/Sixteen"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/TwentyEight"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView android:id="@+id/plWait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_pls_wait"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/statusFor"
+            android:textSize="@dimen/TwentyFour"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Eight"
+            android:background="@drawable/rounded_button_corners_blue"
+            android:text="@string/label_cancel"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/Twenty"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

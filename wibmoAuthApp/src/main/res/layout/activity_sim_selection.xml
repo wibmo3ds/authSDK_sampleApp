@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_main"></include>
+
+    <LinearLayout
+        android:id="@+id/activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/simSelectionHeaderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/TwentyEight"
+            android:gravity="center"
+            android:text="Device Verification"
+            android:textAllCaps="true"
+            android:textSize="@dimen/TwentyEight"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/simSelectionTextview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Sixteen"
+            android:layout_marginRight="@dimen/Eight"
+            android:layout_marginTop="@dimen/TwentyEight"
+            android:gravity="left"
+            android:text="Please select the sim below linked/registered with your bank"
+            android:textSize="@dimen/Eighteen" />
+
+
+        <LinearLayout
+            android:id="@+id/simSelectionMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/simDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/simSelectionTextview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/termsPolicyLayout"
+            android:layout_marginBottom="@dimen/Eight"
+            android:gravity="left"
+            android:paddingLeft="@dimen/Sixteen"
+            android:paddingRight="@dimen/Eight"
+            android:text="We will send and auto-receive an SMS to verify your mobile number. Regular SMS charges may apply."
+            android:textSize="@dimen/Fourteen" />
+
+        <LinearLayout
+            android:id="@+id/termsPolicyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/simSelectionVerifyButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Twelve"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/Two"
+            android:paddingLeft="@dimen/Sixteen"
+            android:paddingRight="@dimen/Eight">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Two"
+                android:text="@string/by_signing_in_you_agree_to_our"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/Twelve" />
+
+            <TextView
+                android:id="@+id/textViewTermsAndConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/Twelve" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "
+                android:textSize="@dimen/Twelve" />
+
+            <TextView
+                android:id="@+id/textViewPrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Two"
+                android:text="@string/privacy_policy2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/Twelve" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/simSelectionVerifyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/Eight"
+            android:background="@drawable/rounded_button_corners_blue"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Twenty"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

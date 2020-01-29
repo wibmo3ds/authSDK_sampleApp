@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wibmo.com.wibmoAuthApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="11f1a462e14807168150f3708c1cd810bb1236d6" />-->
+        <activity
+            android:name="wibmo.com.main.OfferAlertsNotifications"
+            android:theme="@style/AppTheme.BaseM"
+            android:screenOrientation="portrait" />
+        <activity
+
+            android:name="wibmo.com.main.IntroActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="wibmo.com.main.SettingsActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="wibmo.com.main.LockScreenActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="wibmo.com.main.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BaseM"></activity>
+        <activity
+            android:name="wibmo.com.main.TransactionHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BaseM"></activity>
+        <activity
+            android:name="wibmo.com.main.TOTPviewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BaseM"></activity>
+
+
+        <service
+            android:name="wibmo.com.main.FCM.MyFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--<service android:name="wibmo.com.main.FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+
+        <activity
+            android:name="wibmo.com.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BaseM"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="wibmo.com.main.ActivitySimSelectionScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BaseM" />
+    </application>
+
+</manifest>

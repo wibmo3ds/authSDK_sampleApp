@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "499273122597",
+    "firebase_url": "https://wibmo-auth-app.firebaseio.com",
+    "project_id": "wibmo-auth-app",
+    "storage_bucket": "wibmo-auth-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499273122597:android:2292cd6e779b53ea",
+        "android_client_info": {
+          "package_name": "com.federalbank.fedalerts"
+        }
+      },
+      "oauth_client": [
+
+        {
+          "client_id": "499273122597-emdc6fssnf6elle1cdepa7eb8bekp5ik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.federalbank.fedalerts",
+            "certificate_hash": "fb48683b12e5aa8995333c4ef074bd6498970184"
+          }
+        },
+        {
+          "client_id": "499273122597-qb9vrb8btibbe7er28u16gte493vrrsm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlrdMwmN2Wj6Lb4O-Zb9gu-2TcLfylyxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499273122597-qb9vrb8btibbe7er28u16gte493vrrsm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

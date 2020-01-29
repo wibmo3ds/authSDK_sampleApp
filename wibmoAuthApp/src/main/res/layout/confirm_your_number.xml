@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageViewBankConfirmScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/TwentyFour"
+        android:layout_marginTop="@dimen/ThirtySix"
+        app:srcCompat="@drawable/ic_bank_verify"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/confirmNumberHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewBankConfirmScreen"
+        android:layout_marginBottom="@dimen/Sixteen"
+        android:gravity="center"
+        android:text="Verify your Number"
+        android:textColor="@color/brand_color"
+        android:textSize="@dimen/TwentyEight" />
+
+    <TextView
+        android:id="@+id/confirmNumberTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmNumberHeaderTextView"
+        android:paddingLeft="@dimen/Sixteen"
+        android:paddingRight="@dimen/Sixteen"
+        android:text="Please ensure that this selected number is linked to your Bank Account!"
+        android:textSize="@dimen/Eighteen" />
+
+    <Button
+        android:id="@+id/sim_selection_confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmNumberTextView1"
+        android:layout_margin="@dimen/Eight"
+        android:background="@drawable/rounded_button_corners_blue"
+        android:text="Confirm"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Twenty" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:id="@+id/mainRegisteredUserLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/toolbar"></include>
+
+            <FrameLayout
+                android:id="@+id/fragment_placeholder"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fragment_placeholder"
+                android:layout_marginTop="@dimen/FourtyEight">
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemBackground="@drawable/menu_item_background_color"
+        app:itemIconTint="@drawable/menu_item_text_color"
+        app:itemTextColor="@drawable/menu_item_text_color"
+        app:menu="@menu/activity_main_drawer"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Eighty"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:background="@drawable/gradient_background_sidebar">
+
+            <ImageView
+                android:id="@+id/poweredByWibmo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="left"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:src="@drawable/powered_by_wibmo"/>
+
+            <TextView
+                android:id="@+id/versionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="bottom|right"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Sixteen"
+                android:text="shshshhs"
+                android:layout_weight="1.5"/>
+
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+    <RelativeLayout
+        android:id="@+id/deregisteredUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/deregister_success_layout"></include>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

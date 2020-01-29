@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/location"
+        android:actionLayout="@layout/events_action_bar"
+        android:title=" "
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="never" />-->
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_menu_notifications"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/wibmoIcon"
+        android:icon="@drawable/wibmo_icon"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

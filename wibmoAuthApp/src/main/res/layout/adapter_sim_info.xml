@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/simLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/simLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/sim1ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/Eighteen"
+            android:src="@drawable/circle_blue_selected" />
+
+        <ImageView
+            android:id="@+id/simCardImageView1"
+            android:layout_width="74dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_simcard" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/NinetyEight"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/operatorImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/TwentyEight"
+                android:layout_marginTop="@dimen/Twenty"
+                app:srcCompat="@drawable/ic_tick" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sim1Tick"
+            android:layout_width="@dimen/FourtyEight"
+            android:layout_height="@dimen/FourtyEight"
+            android:layout_alignEnd="@+id/sim1ImageView"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/white_blue_tick"
+            android:visibility="visible"
+            android:layout_alignRight="@+id/sim1ImageView" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/sim1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="SIM 1"
+        android:textSize="@dimen/Eighteen"
+        android:textStyle="bold" />
+</RelativeLayout>
