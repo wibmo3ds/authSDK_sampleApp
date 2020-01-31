@@ -60,14 +60,14 @@ public class SliderImageFragment extends Fragment {
         try {
             intoImageView = view.findViewById(R.id.main_bg);
 
-            String resIntroDrawable = AppConstants.S3_BASE_URL + "/pic_1.png";
+            String resIntroDrawable = AppConstants.S3_BASE_URL + "/pic.png";
 
             if (instance <= 0) {
-                resIntroDrawable = AppConstants.S3_BASE_URL + "/pic_1.png";
+                resIntroDrawable = AppConstants.S3_BASE_URL + "/pic.png";
             } else if (instance == 1) {
-                resIntroDrawable =  AppConstants.S3_BASE_URL + "/pic_2.png";
+                resIntroDrawable =  AppConstants.S3_BASE_URL + "/pic.png";
             }else if(instance == 2){
-                resIntroDrawable =  AppConstants.S3_BASE_URL + "/pic_3.png";
+                resIntroDrawable =  AppConstants.S3_BASE_URL + "/pic.png";
             }
 
             Glide.with(getActivity())
