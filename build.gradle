@@ -26,13 +26,13 @@ allprojects {
             content {
                 includeGroupByRegex "com\\.wibmo.*"
             }
-            credentials(HttpHeaderCredentials) {
+            /*credentials(HttpHeaderCredentials) {
                 name = "Authorization"
                 value = "Bearer 3e0448adada572b9a282d499f819117fd2daadc7"
             }
             authentication {
                 register("header", HttpHeaderAuthentication)
-            }
+            }*/
         }
         google()
         mavenCentral()

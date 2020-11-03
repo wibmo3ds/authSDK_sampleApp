@@ -1,3 +1,7 @@
+
+#-keep class com.wibmo.core.** { *; }
+
+
 -optimizationpasses 5
 
 #code/removal/simple,code/removal/advanced,

@@ -169,8 +169,7 @@ public class MainActivity extends UIBaseActivity implements AuthRegistrationCall
 
                             String token = task.getResult().getToken();
 
-                            WibmoSDK.getInstance().setFcmToken(token
-                            );
+                            WibmoSDK.getInstance().setFcmToken(null);
 
                         }
 
@@ -179,15 +178,11 @@ public class MainActivity extends UIBaseActivity implements AuthRegistrationCall
                         SIMInfo simInfo = new SIMInfo();
                         simInfo.setCarrierName("JIO");
                         simInfo.setCountryCode("91");
-                        simInfo.setPhoneNumber("6363922767");
+                        simInfo.setPhoneNumber("8050689796");
                         simInfo.setSimId(mngr.getDeviceId());
                         simInfo.setDeviceId(mngr.getSubscriberId());
 
                         authRegistration.onPermissionGranted(simInfo);
-                        // Get new Instance ID token
-
-
-                        //TODO register token to your server.
 
                     }
                 });

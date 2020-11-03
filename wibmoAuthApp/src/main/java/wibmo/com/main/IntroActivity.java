@@ -74,7 +74,6 @@ public class IntroActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        //wibmoSDK.setPreferenceData(bankName, apiKey);
         nextBtn = findViewById(R.id.skipEduScreen);
 
 
